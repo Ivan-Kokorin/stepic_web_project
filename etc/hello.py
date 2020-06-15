@@ -1,11 +1,6 @@
-CONFIG = {
-    'mode': 'wsgi',
-    'working_dir': '/home/box/web',
-    'python': '/usr/bin/python',
-    'args': (
-        '--bind=0.0.0.0:8080',
-        '--workers=5',
-        '--timeout=60',
-        'app.module',
-    ),
-}
+bind = '0.0.0.0:8000'
+workers = 5
+user = 'ivan'
+limit_request_fields = 32000
+limit_request_field_size = 0
+raw_env = 'DJANGO_SETTINGS_MODULE=project.settings'
